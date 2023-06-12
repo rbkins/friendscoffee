@@ -1,0 +1,177 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Estilo/Estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+     <!--Liks footer-->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.3.0/fonts/remixicon.css" rel="stylesheet">
+     <!--!!!!!!-->
+     <script src="js/scrollreveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+          <nav>
+            <img src="Imagenes/Logotipo.png" height="19%" width="50%" alt="">
+            <a id="inicio" href="Inicio.html" data-toggle="popover"title="Pagina de inicio" data-content="Interactua en nuestra pagina principal"> Inicio </a>
+            <a id="Friends Coffee" href="Index.html" data-toggle="popover" title="Friends Coffee" data-content="El café ayuda a quien duerme poco y sueña mucho ">Friends Coffee </a>
+            <a id="Carta" href="Menu.html" data-toggle="popover" title="Te ofrecemos" data-content="Contamos con un amplio menu lleno de platillos muy bien pensados y elaborados, con la intención de darte los mejores momentos.">Carta</a>
+            <a id="Nosotros" href="Nosotros.html" data-toggle="popover"title="Sobre nosotros" data-content="Enterate de quines somos y por que hacemos lo que hacemos ">Nosotros</a>
+            <a id="contacto" href="Contacto.html" data-toggle="popover" title="Contactanos" data-content="Interactua con nosotros y has tus preguntas." >Contacto</a>            
+    </nav>
+
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover({
+            trigger: "hover",
+            delay: 400
+          }
+          );   
+        });
+        </script>
+        <div style="width: 100%; height: 30%;">
+        <div style="background: url(Imagenes/fondo-nav2.1.jpg)no-repeat;background-size: cover; padding: 5%; background-attachment: fixed; " id="inicio" class="jumbotron text-center">
+          <div class="btn-menu" style="float: left;">
+            <label for="btn-menu" class="btn btn-light">☰</label>
+          </div>
+          <img src="Imagenes/Logotipo.png" height="120%" width="10%" alt="">
+          <h1><span style="color: #F0EEE6;">F</span ><span style="color: #d8b563;"><span style="color: #d8b563;">riends</span></span> <span style="color: #F0EEE6;">C</span><span style="color: #d8b563;">offee</span></h1>
+          <p style="color: #d8b563;">Un buen cafe hace que todo sea posible</p>
+          </div>
+        </div>
+    </header>
+            <!--Cuerpo de la pagina -->
+        <center>
+          <h2>Desayunos</h2>
+        <div class="container2">
+          
+            <div class="card2">
+                <figure>
+                    <img src="Imagenes/desayuno04.jpg" alt="Tostadas de arandanos">
+                </figure>
+                <div class="contenido2">
+                    <h3>Tostadas de arandanos</h3>
+                    <p>"Nuestra deliciosa tostada de arándanos es una combinación irresistible de sabores y texturas. Comenzamos con una rebanada de pan artesanal tostado a la perfección, que proporciona una base crujiente y ligeramente dorada."</p>
+                    <p>$2.50</p>
+                </div>
+            </div>
+            <div class="card2">
+                <figure>
+                    <img src="Imagenes/desayuno05.jpg" alt="Desayuno Gourmet">
+                </figure>
+                <div class="contenido2">
+                    <h3>Desayuno Gourmet</h3>
+                    <p>"Una mezcla perfecta de sabores exquisitos y presentación elegante. Desde el momento en que te sientas a la mesa, te deleitarás con un festín visual que promete ser igualmente satisfactorio para tus papilas gustativas."</p>
+                    <p>$2.50</p>
+                </div>
+            </div>
+            <div class="card2">
+                <figure>
+                    <img src="Imagenes/desayuno06.jpg" alt="Hot cakes frutales">
+                </figure>
+                <div class="contenido2">
+                    <h3>Hot cakes frutales</h3>
+                    <p>"Nuestros hot cakes frutales están hechos con una mezcla especial de ingredientes de alta calidad que garantizan una textura suave y esponjosa. Cada panqueque se cocina a la perfección, dorado en el exterior y esponjoso en el interior."</p>
+                    <p>$2.50</p>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+          <div class="card2">
+            <figure>
+                <img src="Imagenes/desayuno.jpg" alt="Desayuno Típico">
+            </figure>
+            <div class="contenido2">
+                <h3>Desayuno tipico</h3>
+                <p>"Sumérgete en la tradición culinaria y saborea un auténtico desayuno típico en nuestro restaurante. Nos enorgullece presentar una experiencia matutina que captura los sabores y aromas de la cocina local."</p>
+                <p>$2.50</p>
+            </div>
+        </div>
+        <div class="card2">
+            <figure>
+                <img src="Imagenes/desayuno02.jpg" alt="Huevos a la francesa">
+            </figure>
+            <div class="contenido2">
+                <h3>Huevos a la francesa</h3>
+                <p>"Sumérgete en la sofisticación y el encanto de la cocina francesa con nuestros huevos a la francesa. Este clásico desayuno se presenta con un toque elegante y una ejecución impecable que te transportará a las calles de París."</p>
+                <p>$2.50</p>
+            </div>
+        </div>
+        <div class="card2">
+            <figure>
+                <img src="Imagenes/desayuno03.jpg" alt="Huevos Revueltos">
+            </figure>
+            <div class="contenido2">
+                <h3>Huevos Revueltos</h3>
+                <p>Si buscas un desayuno clásico y reconfortante, nuestros huevos revueltos son la elección perfecta. Con una preparación cuidadosa y un sabor delicioso, te ofrecemos un plato que nunca pasa de moda y que satisface los antojos de todos.</p>
+                <p>$2.50</p>
+            </div>
+        </div>
+        </div>
+      </center>
+    <!--Aqui Termina el cuerpo de la pagina principal-->
+      <!--Creacion de la caja-->
+      <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+          <div>
+            <!--Primera fila donde esta el logo-->
+            <div class="row text-center text-center">
+                <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <img src="Imagenes/Logotipo.png" alt="" style="width: 200px; height: 200px;">
+                </div>
+                
+               <!--Aqui estan los contactos,iconos-->
+                <div class="col-md-2 col-lg-4 colo-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-white">Redes Sociales</h5>
+
+           
+            <section class="icons">
+              <a href="https://www.instagram.com/friendscoffeesv/" class="icon icon--instagram" target="_blank">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://www.facebook.com/friendscoffeeSV" class="icon icon--facebook" target="_blank">
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a href="https://www.tiktok.com/@friendscoffeesv" class="icon icon--tiktok" target="_blank">
+                  <i class="ri-tiktok-line"></i>
+              </a>
+              <a href="https://wa.me/79071021" class="icon icon--whatsapp" target="_blank">
+                <i class="ri-whatsapp-line"></i>
+              </a>
+            </section>
+              <!--Dirección-->
+            <div class="col-md-4 col-lg-8 colo-xl-2 mx-auto mt-4" >
+            
+                <i class="ri-map-pin-line" style="font-family: 'Courier New', Courier, monospace; font-size: 15px;">Santa Ana, EL Salvador 
+                  Avenida Independencia Sur y Calle, José Mariano Méndez #56</i>
+              </div>
+              <!------------------------------------------------------------->
+          </div>
+        <!--Parte de abajo-->
+          </div>
+          <!--Lines hr-->
+          <hr class="mb-4">
+          <!--Derechos reservados-->
+         <div class="row align-items-center" align="center">
+              <p>Friend's Coffee</b> Derechos Reservados &copy; 2023-2024</p>
+         </div>
+        </div>
+     </footer>
+      <script src="js/index.js"></script>
+</body>
+</html>

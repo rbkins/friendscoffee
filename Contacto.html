@@ -1,0 +1,171 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Estilo/Estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+     <!--Liks footer-->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.3.0/fonts/remixicon.css" rel="stylesheet">
+     <!--!!!!!!-->
+     <script src="js/scrollreveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+          <nav>
+            <img src="Imagenes/Logotipo.png" height="19%" width="50%" alt="">
+            <a id="inicio" href="Inicio.html" data-toggle="popover"title="Pagina de inicio" data-content="Interactua en nuestra pagina principal"> Inicio </a>
+            <a id="Friends Coffee" href="Index.html" data-toggle="popover" title="Friends Coffee" data-content="El café ayuda a quien duerme poco y sueña mucho ">Friends Coffee </a>
+            <a id="Carta" href="Menu.html" data-toggle="popover" title="Te ofrecemos" data-content="Contamos con un amplio menu lleno de platillos muy bien pensados y elaborados, con la intención de darte los mejores momentos.">Carta</a>
+            <a id="Nosotros" href="Nosotros.html" data-toggle="popover"title="Sobre nosotros" data-content="Enterate de quines somos y por que hacemos lo que hacemos ">Nosotros</a>
+            <a id="contacto" href="Contacto.html" data-toggle="popover" title="Contactanos" data-content="Interactua con nosotros y has tus preguntas." >Contacto</a>            
+    </nav>
+
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover({
+            trigger: "hover",
+            delay: 400
+          }
+          );   
+        });
+        </script>
+        <div style="width: 100%; height: 30%;">
+        <div style="background: url(Imagenes/fondo-nav2.1.jpg)no-repeat;background-size: cover; padding: 5%; background-attachment: fixed; " id="inicio" class="jumbotron text-center">
+          <div class="btn-menu" style="float: left;">
+            <label for="btn-menu" class="btn btn-light">☰</label>
+          </div>
+          <img src="Imagenes/Logotipo.png" height="120%" width="10%" alt="">
+          <h1><span style="color: #F0EEE6;">F</span ><span style="color: #d8b563;"><span style="color: #d8b563;">riends</span></span> <span style="color: #F0EEE6;">C</span><span style="color: #d8b563;">offee</span></h1>
+          <p style="color: #d8b563;">Un buen cafe hace que todo sea posible</p>
+          </div>
+        </div>
+    </header>
+        <p style="margin-top: 5%;">¡Bienvenidos a Friends Coffee! Somos una acogedora cafetería donde los amigos se reúnen y se crean 
+          vínculos especiales. Ofrecemos deliciosos cafés artesanales y un ambiente cálido y amigable. 
+          Ven y únete a nuestra comunidad de amantes del café y descubre por qué somos el punto de encuentro 
+          preferido para amigos de todas partes.</p>
+        <p>En Friends Coffee, nos apasiona ofrecer una experiencia auténtica y de calidad. Trabajamos con 
+          proveedores locales, seleccionando cuidadosamente ingredientes frescos y sostenibles. Nuestro 
+          personal te brindará un servicio excepcional, siempre con una sonrisa. Ven a conocernos y 
+          descubre por qué somos más que una cafetería, somos el lugar donde los amigos se encuentran 
+          y los momentos especiales suceden.</p>
+        <br>
+        <!--FORMULARIO MÁS BONITO-->
+        <div class="content">
+
+          <h1 style="padding-left: 25%;" class="logo">Contáctanos</h1>
+  
+          <div class="contact-wrapper animated bounceInUp">
+              <div class="contact-form">
+                  <h3>Contact us</h3>
+                  <form action="">
+                      <p>
+                          <label>Nombre Completo</label>
+                          <input type="text" name="fullname" title="Ingresa letras solamente" required pattern="[a-z A-Z]+">
+                      </p>
+                      <p>
+                          <label>Email</label>
+                          <input type="email" name="email" required pattern="[a-z A-Z 0-9]">
+                      </p>
+                      <p>
+                          <label>Número de Teléfono</label>
+                          <input maxlength="8" minlength="8" mtype="tel" name="phone" title="Ingresa números solamente" required pattern="[0-9]+">
+                      </p>
+                      <p>
+                          <label>Asunto</label>
+                          <input type="text" name="affair" required pattern="[A-Z a-z 0-9]+" >
+                      </p>
+                      <p class="block">
+                         <label>Mensaje</label> 
+                          <textarea name="message" rows="3" required></textarea>
+                      </p>
+                      <p class="block">
+                          <button>
+                              Enviar
+                          </button>
+                      </p>
+                  </form>
+              </div>
+              <div class="contact-info">
+                  <h4>Más Información</h4>
+                  <ul>
+                      <li><i class="ri-map-pin-line"></i>&nbsp;Santa Ana, EL Salvador <br>
+                      &nbsp; Avenida Independencia Sur y Calle &nbsp; &nbsp; <br> &nbsp;&nbsp;José Mariano Méndez #56</li>
+                      <li><i class="ri-mail-line"></i>&nbsp; friends.coffeesv@gmail.</li>
+                  </ul>
+                  <p>Comunícate con nosotros y déjanos un comentario. Nos encanta escuchar tus 
+                    opiniones y sugerencias para seguir mejorando. Queremos asegurarnos de que tu 
+                    experiencia en Friends Coffee sea excepcional, por lo que valoramos enormemente tus comentarios. 
+                    ¡Estamos ansiosos por saber qué piensas!</p>
+                  <p><i class="ri-cup-line"></i>&nbsp;Friend's Coffee</p>
+              </div>
+          </div>
+      </div>
+    
+    
+     <!--Aqui Termina el cuerpo de la pagina principal-->
+      <!--Creacion de la caja-->
+      <footer class="bg-dark text-white pt-5 pb-4" style="margin-top: 2%;">
+        <div class="container text-center text-md-left">
+          <div>
+            <!--Primera fila donde esta el logo-->
+            <div class="row text-center text-center">
+                <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <img src="Imagenes/Logotipo.png" alt="" style="width: 200px; height: 200px;">
+                </div>
+                
+               <!--Aqui estan los contactos,iconos-->
+                <div class="col-md-2 col-lg-4 colo-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-white">Redes Sociales</h5>
+
+           
+            <section class="icons">
+              <a href="https://www.instagram.com/friendscoffeesv/" class="icon icon--instagram" target="_blank">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://www.facebook.com/friendscoffeeSV" class="icon icon--facebook" target="_blank">
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a href="https://www.tiktok.com/@friendscoffeesv" class="icon icon--tiktok" target="_blank">
+                  <i class="ri-tiktok-line"></i>
+              </a>
+              <a href="https://wa.me/79071021" class="icon icon--whatsapp" target="_blank">
+                <i class="ri-whatsapp-line"></i>
+              </a>
+            </section>
+              <!--Dirección-->
+            <div class="col-md-4 col-lg-8 colo-xl-2 mx-auto mt-4" >
+            
+                <i class="ri-map-pin-line" style="font-family: 'Courier New', Courier, monospace; font-size: 15px;">Santa Ana, EL Salvador 
+                  Avenida Independencia Sur y Calle, José Mariano Méndez #56</i>
+              </div>
+              <!------------------------------------------------------------->
+          </div>
+        <!--Parte de abajo-->
+          </div>
+          <!--Lines hr-->
+          <hr class="mb-4">
+          <!--Derechos reservados-->
+         <div class="row align-items-center" align="center">
+              <p>Friend's Coffee</b> Derechos Reservados &copy; 2023-2024</p>
+         </div>
+        </div>
+     </footer>
+           <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Estilo/Estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+     <!--Liks footer-->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.3.0/fonts/remixicon.css" rel="stylesheet">
+     <!--!!!!!!-->
+     <script src="js/scrollreveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!--Barra de navegación -->
+    <header>
+      <input type="checkbox" id="btn-menu">
+      <div class="container-menu">
+          <div class="cont-menu">
+            <nav>
+              <img src="Imagenes/Logotipo.png" height="19%" width="50%" alt="">
+            <a id="inicio" href="Inicio.html" data-toggle="popover"title="Pagina de inicio" data-content="Interactua en nuestra pagina principal"> Inicio </a>
+            <a id="Friends Coffee" href="Index.html" data-toggle="popover" title="Friends Coffee" data-content="El café ayuda a quien duerme poco y sueña mucho ">Friends Coffee </a>
+            <a id="Carta" href="Menu.html" data-toggle="popover" title="Te ofrecemos" data-content="Contamos con un amplio menu lleno de platillos muy bien pensados y elaborados, con la intención de darte los mejores momentos.">Carta</a>
+            <a id="Nosotros" href="Nosotros.html" data-toggle="popover"title="Sobre nosotros" data-content="Enterate de quines somos y por que hacemos lo que hacemos ">Nosotros</a>
+            <a id="contacto" href="Contacto.html" data-toggle="popover" title="Contactanos" data-content="Interactua con nosotros y has tus preguntas." >Contacto</a>            
+      </nav>
+
+              <label for="btn-menu">✖️</label>
+          </div>
+      </div>
+        <script>
+          $(document).ready(function(){
+            $('[data-toggle="popover"]').popover({
+              trigger: "hover",
+              delay: 400
+            }
+            );   
+          });
+          </script>
+          <div style="width: 100%; height: 30%;">
+          <div style="background: url(Imagenes/fondo-nav2.1.jpg)no-repeat;background-size: cover; padding: 5%; background-attachment: fixed; " id="inicio" class="jumbotron text-center">
+            <div class="btn-menu" style="float: left;">
+              <label for="btn-menu" class="btn btn-light">☰</label>
+            </div>
+            <img src="Imagenes/Logotipo.png" height="120%" width="10%" alt="">
+            <h1><span style="color: #F0EEE6;">F</span ><span style="color: #d8b563;"><span style="color: #d8b563;">riends</span></span> <span style="color: #F0EEE6;">C</span><span style="color: #d8b563;">offee</span></h1>
+            <p style="color: #d8b563;">Un buen cafe hace que todo sea posible</p>
+            </div>
+          </div>
+      </header>
+        <!--Aqui termina la barra de navegación  -->
+
+            <!--Cuerpo de la pagina -->
+            <center>
+                <h2>Bebidas</h2>
+                <div class="container2">
+                    <div class="card2">
+                        <figure>
+                            <img src="Imagenes/bebidas01.jpg" alt="Gaseosas">
+                        </figure>
+                        <div class="contenido2">
+                            <h3>Gaseosas  </h3>
+                            <p>Bienvenido al apartado de gaseosas de nuestro restaurante, donde la burbujeante satisfacción se encuentra en cada sorbo.</p>
+                            <p>$2.50</p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <figure>
+                            <img src="Imagenes/bebidas02.jpg" alt="Frappe">
+                        </figure>
+                        <div class="contenido2">
+                            <h3>Frappe</h3>
+                            <p>Permíteme presentarte nuestra joya helada: el Frappé de nuestro restaurante. Este refrescante brebaje es el compañero perfecto para combatir el calor y disfrutar de un momento de indulgencia.</p>
+                            <p>$2.50</p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <figure>
+                            <img src="Imagenes/bebidas03.jpg" alt="Frozen">
+                        </figure>
+                        <div class="contenido2">
+                            <h3>Frozen</h3>
+                            <p>
+                              Permíteme presentarte nuestro irresistible frozen, una deliciosa y refrescante experiencia congelada que te llevará a un mundo de sabores helados.</p>
+                            <p>$2.50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2">
+                  <div class="card2">
+                    <figure>
+                        <img src="Imagenes/bebidas04.jpg" alt="Jugo de frutas">
+                    </figure>
+                    <div class="contenido2">
+                        <h3>Jugo de frutas</h3>
+                        <p>Déjate seducir por la frescura y la vitalidad de nuestros jugos de frutas, una explosión de sabores naturales que te revitalizará desde el primer sorbo.</p>
+                        <p>$2.50</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <figure>
+                        <img src="Imagenes/bebidas05.jpg" alt="Espresso">
+                    </figure>
+                    <div class="contenido2">
+                        <h3>Espresso</h3>
+                        <p>Sumérgete en la intensidad y el deleite de nuestro espresso, una experiencia sensorial que te transportará al corazón de Italia en cada sorbo.</p>
+                        <p>$2.50</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <figure>
+                        <img src="Imagenes/bebidas06.jpg" alt="Frapuccino">
+                    </figure>
+                    <div class="contenido2">
+                        <h3>Frapuccino</h3>
+                        <p>El Frappuccino de nuestro restaurante es una auténtica obra maestra refrescante y deliciosa. Este popular y sofisticado brebaje combina la cremosidad del helado con la intensidad del café.</p>
+                        <p>$2.50</p>
+                    </div>
+                </div>
+                </div>
+              </center>
+
+        <!--Aqui Termina el cuerpo de la pagina principal-->
+      <!--Creacion de la caja-->
+      <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+          <div>
+            <!--Primera fila donde esta el logo-->
+            <div class="row text-center text-center">
+                <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <img src="Imagenes/Logotipo.png" alt="" style="width: 200px; height: 200px;">
+                </div>
+                
+               <!--Aqui estan los contactos,iconos-->
+                <div class="col-md-2 col-lg-4 colo-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-white">Redes Sociales</h5>
+
+           
+            <section class="icons">
+              <a href="https://www.instagram.com/friendscoffeesv/" class="icon icon--instagram" target="_blank">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://www.facebook.com/friendscoffeeSV" class="icon icon--facebook" target="_blank">
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a href="https://www.tiktok.com/@friendscoffeesv" class="icon icon--tiktok" target="_blank">
+                  <i class="ri-tiktok-line"></i>
+              </a>
+              <a href="https://wa.me/79071021" class="icon icon--whatsapp" target="_blank">
+                <i class="ri-whatsapp-line"></i>
+              </a>
+            </section>
+              <!--Dirección-->
+            <div class="col-md-4 col-lg-8 colo-xl-2 mx-auto mt-4" >
+            
+                <i class="ri-map-pin-line" style="font-family: 'Courier New', Courier, monospace; font-size: 15px;">Santa Ana, EL Salvador 
+                  Avenida Independencia Sur y Calle, José Mariano Méndez #56</i>
+              </div>
+              <!------------------------------------------------------------->
+          </div>
+        <!--Parte de abajo-->
+          </div>
+          <!--Lines hr-->
+          <hr class="mb-4">
+          <!--Derechos reservados-->
+         <div class="row align-items-center" align="center">
+              <p>Friend's Coffee</b> Derechos Reservados &copy; 2023-2024</p>
+         </div>
+        </div>
+     </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
